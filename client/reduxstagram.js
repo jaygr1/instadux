@@ -10,13 +10,15 @@ import App from './components/App';
 import Single from './components/Single';
 import PhotoGrid from './components/PhotoGrid';
 
-import Raven from 'raven-js';
-import { sentry_url, logException } from './data/config';
+//commenting out Raven stuff because I don't want to go sign up for my own key right now
 
-Raven.config(sentry_url).install();
-
-// cool (below) has a pop up that lets user add info that will be attached to Sentry info
-Raven.showReportDialog();
+// import Raven from 'raven-js';
+// import { sentry_url, logException } from './data/config';
+//
+// Raven.config(sentry_url).install();
+//
+// // cool (below) has a pop up that lets user add info that will be attached to Sentry info
+// Raven.showReportDialog();
 
 //react router
 import { Router, Route, IndexRoute, browserHistory} from 'react-router';
